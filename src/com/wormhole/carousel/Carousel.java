@@ -235,39 +235,39 @@ public class Carousel extends CarouselSpinner implements GestureDetector.OnGestu
 		setStaticTransformationsEnabled(true);
 		mAnimationDuration = 200;
 
-		/*
-		 * // Retrieve settings TypedArray arr =
-		 * getContext().obtainStyledAttributes(attrs, R.styleable.Carousel);
-		 * mAnimationDuration =
-		 * arr.getInteger(R.styleable.Carousel_android_animationDuration, 400);
-		 * Log.w("arraylength", "mAnimationDuration is = "+mAnimationDuration);
-		 * 
-		 * mUseReflection = arr.getBoolean(R.styleable.Carousel_UseReflection,
-		 * false); int selectedItem =
-		 * arr.getInteger(R.styleable.Carousel_SelectedItem, 0); int
-		 * imageArrayID = arr.getResourceId(R.styleable.Carousel_Items, -1);
-		 * TypedArray images = getResources().obtainTypedArray(imageArrayID);
-		 * 
-		 * //Retrieve names int namesForItems =
-		 * arr.getResourceId(R.styleable.Carousel_Names, -1);
-		 * 
-		 * TypedArray names = null; if (namesForItems != -1) names =
-		 * getResources().obtainTypedArray(namesForItems);
-		 * 
-		 * int min = arr.getInteger(R.styleable.Carousel_minQuantity,
-		 * MIN_QUANTITY); int max =
-		 * arr.getInteger(R.styleable.Carousel_maxQuantity, MAX_QUANTITY);
-		 * 
-		 * float mTheta = arr.getFloat(R.styleable.Carousel_maxTheta,
-		 * MAX_THETA); if (mTheta > MAX_THETA || mTheta < 0.0f) mTheta =
-		 * MAX_THETA;
-		 * 
-		 * mMinQuantity = min < MIN_QUANTITY ? MIN_QUANTITY : min; mMaxQuantity
-		 * = max > MAX_QUANTITY ? MAX_QUANTITY : max;
-		 * 
-		 * if (arr.length() < mMinQuantity || arr.length() > mMaxQuantity) throw
-		 * new IllegalArgumentException( "Invalid set of items.");
-		 */
+		
+/*		  // Retrieve settings TypedArray arr =
+		  getContext().obtainStyledAttributes(attrs, R.styleable.Carousel);
+		  mAnimationDuration =
+		  arr.getInteger(R.styleable.Carousel_android_animationDuration, 400);
+		  Log.w("arraylength", "mAnimationDuration is = "+mAnimationDuration);
+		  
+		  mUseReflection = arr.getBoolean(R.styleable.Carousel_UseReflection,
+		  false); int selectedItem =
+		  arr.getInteger(R.styleable.Carousel_SelectedItem, 0); int
+		  imageArrayID = arr.getResourceId(R.styleable.Carousel_Items, -1);
+		  TypedArray images = getResources().obtainTypedArray(imageArrayID);
+		  
+		  //Retrieve names int namesForItems =
+		  arr.getResourceId(R.styleable.Carousel_Names, -1);
+		  
+		  TypedArray names = null; if (namesForItems != -1) names =
+		  getResources().obtainTypedArray(namesForItems);
+		  
+		  int min = arr.getInteger(R.styleable.Carousel_minQuantity,
+		  MIN_QUANTITY); int max =
+		  arr.getInteger(R.styleable.Carousel_maxQuantity, MAX_QUANTITY);
+		  
+		  float mTheta = arr.getFloat(R.styleable.Carousel_maxTheta,
+		  MAX_THETA); if (mTheta > MAX_THETA || mTheta < 0.0f) mTheta =
+		  MAX_THETA;
+		  
+		  mMinQuantity = min < MIN_QUANTITY ? MIN_QUANTITY : min; mMaxQuantity
+		  = max > MAX_QUANTITY ? MAX_QUANTITY : max;
+		  
+		  if (arr.length() < mMinQuantity || arr.length() > mMaxQuantity) throw
+		  new IllegalArgumentException( "Invalid set of items.");*/
+		 
 
 		// Initialize image adapter
 		ImageAdapter adapter = new ImageAdapter(getContext());
@@ -851,9 +851,9 @@ public class Carousel extends CarouselSpinner implements GestureDetector.OnGestu
 			// "Images and names arrays length doesn't match");
 
 			final int reflectionGap = 4;
-			Log.w("arraylength", "ConstUtils.mPictureName.size() is = " + ConstUtils.mPictureName.size());
-			Object[] values = ConstUtils.mPictureName.values().toArray();
-			Log.w("arraylength", "values.length is = " + values.length);
+//			Log.w("arraylength", "ConstUtils.mPictureName.size() is = " + ConstUtils.mPictureName.size());
+//			Object[] values = ConstUtils.mPictureName.values().toArray();
+//			Log.w("arraylength", "values.length is = " + values.length);
 			// Drawable[] drawables = new Drawable[array.length()];
 			int carouselCount = 0;
 			mImages = new CarouselItem[10];
@@ -861,13 +861,40 @@ public class Carousel extends CarouselSpinner implements GestureDetector.OnGestu
 			if (mDirection == "UP") {
 				carouselCount += 10;
 			}
-			Log.w("ischanged", "carouselCount is = " + carouselCount);
+//			Log.w("ischanged", "carouselCount is = " + carouselCount);
+			
+			int[] drawID = new int[21];
+			drawID[0] = R.drawable.album;
+			drawID[1] = R.drawable.bill;
+			drawID[2] = R.drawable.gamehall;
+			drawID[3] = R.drawable.health;
+			drawID[4] = R.drawable.home;
+			drawID[5] = R.drawable.hy_back;
+			drawID[6] = R.drawable.schoolcom;
+			drawID[7] = R.drawable.news;
+			drawID[8] = R.drawable.mimumusic;
+			drawID[9] = R.drawable.iview;
+			drawID[10] = R.drawable.icon_1;
+			drawID[11] = R.drawable.icon_2;
+			drawID[12] = R.drawable.icon_3;
+			drawID[13] = R.drawable.icon_4;
+			drawID[14] = R.drawable.icon_5;
+			drawID[15] = R.drawable.icon_6;
+			drawID[16] = R.drawable.icon_7;
+			drawID[17] = R.drawable.icon_8;
+			drawID[18] = R.drawable.icon_9;
+			drawID[19] = R.drawable.icon_10;
+			drawID[20] = R.drawable.icon_11;
+			
+			
 			for (int i = 0; i < 10; i++) {
 
-				String imagepath = "/sdcard/Pic/" + (String) values[i + carouselCount];
-				BitmapFactory.Options options = new BitmapFactory.Options();
-				options.inSampleSize = 2;
-				Bitmap originalImage = BitmapFactory.decodeFile(imagepath, options);
+				 Bitmap  originalImage = BitmapFactory.decodeResource(mContext.getResources(), drawID[i + carouselCount]);
+				
+//				String imagepath = "/sdcard/Pic/" + (String) values[i + carouselCount];
+//				BitmapFactory.Options options = new BitmapFactory.Options();
+//				options.inSampleSize = 2;
+//				Bitmap originalImage = BitmapFactory.decodeFile(imagepath, options);
 
 				int bmpWidth = originalImage.getWidth();
 				int bmpHeight = originalImage.getHeight();
