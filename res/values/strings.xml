@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CarouselDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="first_paper_sign">First Paper</string>
+    <string name="last_paper_sign">Last Paper</string>
+    <string name="nextActivity">next</string>
+</resources>

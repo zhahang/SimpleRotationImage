@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pj="http://schemas.android.com/apk/res/com.wormhole.carousel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.wormhole.carousel.Carousel
+        android:id="@+id/carousel1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animationDuration="200"
+        pj:Items="@array/entries"
+        pj:SelectedItem="0"
+        pj:UseReflection="false" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <array name="entries">
+        <item>@drawable/home</item>
+        <item>@drawable/album</item>
+        <item>@drawable/bill</item>
+        <item>@drawable/news</item>
+        <item>@drawable/set</item>
+        <item>@drawable/iview</item>
+        <item>@drawable/health</item>
+        <item>@drawable/mimumusic</item>
+        <item>@drawable/shoppingchenter</item>
+        <item>@drawable/yixunbao</item>
+        <item>@drawable/schoolcom</item>
+        <item>@drawable/gamehall</item>
+    </array>
+    <array name="entries1">
+        <item>@drawable/home</item>
+        <item>@drawable/album</item>
+        <item>@drawable/bill</item>
+        <item>@drawable/icon_4</item>
+        <item>@drawable/icon_5</item>
+        <item>@drawable/icon_6</item>
+        <item>@drawable/icon_7</item>
+        <item>@drawable/icon_8</item>
+        <item>@drawable/icon_9</item>
+        <item>@drawable/icon_10</item>
+        <item>@drawable/icon_11</item>
+        <item>@drawable/icon_1</item>
+    </array>
+    <array name="entries2">
+        <item>@drawable/icon_1</item>
+        <item>@drawable/icon_2</item>
+        <item>@drawable/icon_3</item>
+        <item>@drawable/icon_4</item>
+        <item>@drawable/icon_5</item>
+        <item>@drawable/icon_6</item>
+        <item>@drawable/icon_7</item>
+        <item>@drawable/icon_8</item>
+        <item>@drawable/icon_9</item>
+        <item>@drawable/icon_10</item>
+        <item>@drawable/icon_11</item>
+        <item>@drawable/icon_11</item>
+    </array>
+    <array name="title">
+        <item>家庭圈</item>
+        <item>相册</item>
+        <item>账单</item>
+        <item>消息</item>
+        <item>设置</item>
+        <item>i视界影视</item>
+        <item>健康守护</item>
+        <item>咪咕音乐</item>
+        <item>商户联盟</item>
+        <item>手机易视宝</item>
+        <item>校讯通</item>
+        <item>移动游戏大厅</item>
+    </array>
+    <array name="description">
+        <item>家庭圈</item>
+        <item>相册</item>
+        <item>账单</item>
+        <item>消息</item>
+        <item>设置</item>
+        <item>i视界影视</item>
+        <item>健康守护</item>
+        <item>咪咕音乐</item>
+        <item>商户联盟</item>
+        <item>手机易视宝</item>
+        <item>校讯通</item>
+        <item>移动游戏大厅</item>
+    </array>
+
+</resources>
